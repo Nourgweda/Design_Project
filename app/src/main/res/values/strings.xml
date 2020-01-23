@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Design Project</string>
+    <string name="Signup">Signup with YALLAORDER</string>
+
+    <string name="reset_password_title">Reset your password ?</string>
+    <string name="reset_password_body">Please provide the username or email address that you used when you signed up for your evernote account, we will send you an email to allow you to reset your password.
+    </string>
+    <string name="enter_email_label">Enter your email address</string>
+    <string name="enter_email_edit_text">E-mail@domaine.com     </string>
+    <string name="send_button">Send</string>
+    <string name="go_login_screen">go to the login screen</string>
+    <string name="orders">Orders</string>
+    <string name="search">Search</string>
+    <string name="cart">Cart</string>
+    <string name="hint_area">Area</string>
+    <string name="hint_region">Region</string>
+    <string name="set_now">Set Now</string>
+    <string name="restaurants_found">22 Restaurants Found</string>
+    <string name="revelance">REVELANCE</string>
+    <string name="filter">FILTER</string>
+    <string name="mac_name">McDonald\'s</string>
+    <string name="meals">Meals, Sandwiches</string>
+    <string name="time_dummy">30 MIN</string>
+    <string name="kfc_name">KFC</string>
+    <string name="sandwich">Sandwich Burger</string>
+    <string name="storeName">Burger King</string>
+    <string name="sandwich_description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consecteteur,adipisci velit...there is no one who loves pain itself, </string>
+    <string name="extras">Extras</string>
+    <string name="quantity">Quantity</string>
+    <string name="moins_que"><![CDATA[<]]></string>
+    <string name="plus_que"><![CDATA[>]]></string>
+</resources>

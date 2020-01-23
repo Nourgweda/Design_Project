@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_grey"
+    android:orientation="vertical"
+    android:id="@+id/home_card">
+
+
+    <ImageView
+        android:id="@+id/burger_picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/burger_picture"
+        app:layout_constraintEnd_toStartOf="@+id/pizza_picture"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/pizza_picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pizza_picture"
+        app:layout_constraintEnd_toStartOf="@+id/fish_picture"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/burger_picture"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/fish_picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/fish_picture"
+        app:layout_constraintEnd_toStartOf="@+id/desserts_picture"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pizza_picture"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/desserts_picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/desserts_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fish_picture"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/mexican_picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/mexican_picture"
+        app:layout_constraintEnd_toStartOf="@+id/chinese_picture"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/burger_picture"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/chinese_picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/chinese_picture"
+        app:layout_constraintEnd_toStartOf="@+id/healthy_picture"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mexican_picture"
+        app:layout_constraintTop_toBottomOf="@id/burger_picture"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/healthy_picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/healthy_picture"
+        app:layout_constraintEnd_toStartOf="@+id/seyami_picture"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chinese_picture"
+        app:layout_constraintTop_toBottomOf="@id/burger_picture"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/seyami_picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/seyami_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/healthy_picture"
+        app:layout_constraintTop_toBottomOf="@id/burger_picture"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mexican_picture"
+        android:text="@string/restaurants_found"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/revelance_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mexican_picture"
+        android:text="@string/revelance"
+        android:drawableEnd="@drawable/down_arrow"
+        android:drawableTint="@color/light_green"
+        android:textColor="@color/light_green"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/revelance_label"
+        app:layout_constraintTop_toBottomOf="@id/mexican_picture"
+        android:text="@string/filter"
+        android:textColor="@color/light_green"
+        android:layout_margin="20dp"/>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

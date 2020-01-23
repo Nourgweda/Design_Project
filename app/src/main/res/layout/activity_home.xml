@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"/>
+
+
+    <include
+        android:id="@+id/home_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        android:layout_marginTop="50dp"
+        layout="@layout/home_card"/>
+
+    <ImageView
+        android:id="@+id/mac_picture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/mac_picture"
+        app:layout_constraintTop_toBottomOf="@id/home_card"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/mac_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/mac_picture"
+        app:layout_constraintTop_toBottomOf="@id/home_card"
+        android:layout_marginTop="30dp"
+        android:text="@string/mac_name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:id="@+id/meals_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meals"
+        app:layout_constraintTop_toBottomOf="@id/mac_name"
+        app:layout_constraintStart_toStartOf="@id/mac_name"/>
+
+    <ImageView
+        android:id="@+id/start_one"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star_icon"
+        app:layout_constraintStart_toStartOf="@id/mac_name"
+        app:layout_constraintTop_toBottomOf="@id/meals_mac"
+        android:tint="@color/yellow"/>
+    <ImageView
+        android:id="@+id/start_two"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star_icon"
+        app:layout_constraintTop_toBottomOf="@id/meals_mac"
+        app:layout_constraintStart_toEndOf="@id/start_one"
+        android:tint="@color/yellow"/>
+    <ImageView
+        android:id="@+id/start_three"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star_icon"
+        app:layout_constraintTop_toBottomOf="@id/meals_mac"
+        app:layout_constraintStart_toEndOf="@id/start_two"
+        android:tint="@color/yellow"/>
+    <ImageView
+        android:id="@+id/start_four"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star_icon"
+        app:layout_constraintTop_toBottomOf="@id/meals_mac"
+        app:layout_constraintStart_toEndOf="@id/start_three"
+        android:tint="@color/yellow"/>
+
+    <ImageView
+        android:id="@+id/start_five"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/empty_star"
+        app:layout_constraintTop_toBottomOf="@id/meals_mac"
+        app:layout_constraintStart_toEndOf="@id/start_four"
+        android:tint="@color/yellow"/>
+
+    <ImageView
+        android:id="@+id/empty_like"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/empty_like"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mac_name"
+        android:layout_marginRight="20dp"
+        android:tint="@color/red"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/empty_like"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/time_dummy"
+        />
+
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mac_picture"/>
+
+    <ImageView
+        android:id="@+id/kfc_picture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/kfc_picture"
+        app:layout_constraintTop_toBottomOf="@id/mac_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/kfc_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/kfc_picture"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        android:layout_marginTop="30dp"
+        android:text="@string/kfc_name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:id="@+id/meals_kfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meals"
+        app:layout_constraintTop_toBottomOf="@id/kfc_name"
+        app:layout_constraintStart_toStartOf="@id/kfc_name"/>
+
+    <ImageView
+        android:id="@+id/start_one_kfc"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star_icon"
+        app:layout_constraintStart_toStartOf="@id/kfc_name"
+        app:layout_constraintTop_toBottomOf="@id/meals_kfc"
+        android:tint="@color/yellow"/>
+    <ImageView
+        android:id="@+id/start_two_kfc"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star_icon"
+        app:layout_constraintTop_toBottomOf="@id/meals_kfc"
+        app:layout_constraintStart_toEndOf="@id/start_one_kfc"
+        android:tint="@color/yellow"/>
+    <ImageView
+        android:id="@+id/start_three_kfc"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star_icon"
+        app:layout_constraintTop_toBottomOf="@id/meals_kfc"
+        app:layout_constraintStart_toEndOf="@id/start_two_kfc"
+        android:tint="@color/yellow"/>
+    <ImageView
+        android:id="@+id/start_four_kfc"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/star_icon"
+        app:layout_constraintTop_toBottomOf="@id/meals_kfc"
+        app:layout_constraintStart_toEndOf="@id/start_three_kfc"
+        android:tint="@color/yellow"/>
+
+    <ImageView
+        android:id="@+id/start_five_kfc"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/empty_star"
+        app:layout_constraintTop_toBottomOf="@id/meals_kfc"
+        app:layout_constraintStart_toEndOf="@id/start_four_kfc"
+        android:tint="@color/yellow"/>
+
+    <ImageView
+        android:id="@+id/full_like"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/full_like"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/kfc_name"
+        android:layout_marginRight="20dp"
+        android:tint="@color/red"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/full_like"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/time_dummy"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

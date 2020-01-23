@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".set_place">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/order_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp" />
+
+    <EditText
+        android:id="@+id/area_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/hint_area"
+        android:background="@drawable/border_line_grey"
+        android:padding="5dp"
+        android:drawableEnd="@drawable/arrow_icon"
+        android:drawableTint="@color/grey" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/navigation_picture"
+        app:layout_constraintStart_toEndOf="@+id/area_edit_text"
+        app:layout_constraintTop_toTopOf="@id/area_edit_text"
+        app:layout_constraintBottom_toBottomOf="@id/area_edit_text"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/region_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/area_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/hint_region"
+        android:background="@drawable/border_line_grey"
+        android:padding="5dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/set_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/set_now"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/area_edit_text"
+        app:layout_constraintEnd_toEndOf="@id/area_edit_text"
+        app:layout_constraintTop_toBottomOf="@id/region_edit_text"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/fill_button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

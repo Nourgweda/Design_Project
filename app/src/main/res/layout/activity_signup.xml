@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Signup"
+        android:textColor="@color/green"
+        android:padding="40dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup"
+        android:hint="Firstname"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_firstname"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+       />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstname"
+        android:layout_margin="15dp"
+        android:hint="Lastname"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_firstname"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastname"
+        android:layout_margin="15dp"
+        android:hint="E-mail"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:layout_margin="15dp"
+        android:hint="Password"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/comfirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        android:layout_margin="15dp"
+        android:hint="Confirm Password"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/telephone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/comfirmPassword"
+        android:layout_margin="15dp"
+        android:hint="Telephone"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_telephone"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+    android:id="@+id/address"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:background="@drawable/custom_edit_text"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/telephone"
+    android:layout_margin="15dp"
+    android:hint="Address"
+    android:textSize="20dp"
+    android:drawableLeft="@drawable/ic_address"
+    android:padding="10dp"
+    android:drawablePadding="10dp"
+    />
+
+    <Button
+        android:id="@+id/sign"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address"
+        android:layout_margin="20dp"
+        android:text="Sign Up"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_margin="0dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

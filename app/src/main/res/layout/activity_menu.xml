@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MenuActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/king"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="McDonald's"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/meat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Meats , Sandwitches"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <ImageView
+        android:id="@+id/rate"
+        android:layout_width="119dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/rate"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@id/meat" />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 Min"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/rate"
+        app:layout_constraintTop_toBottomOf="@id/meat" />
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/grey"
+        android:drawableLeft="@drawable/ic_menu"
+        android:gravity="center"
+        android:text="Menu"
+        android:textSize="20dp"
+        android:padding="7dp"
+        app:layout_constraintEnd_toStartOf="@+id/reviews"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/min" />
+
+    <TextView
+        android:id="@+id/reviews"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/grey"
+        android:drawableLeft="@drawable/ic_reviews"
+        android:gravity="center"
+        android:text="Reviews"
+        android:textSize="20dp"
+        android:padding="7dp"
+        app:layout_constraintEnd_toStartOf="@+id/info"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/menu"
+        app:layout_constraintTop_toBottomOf="@id/min" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/grey"
+        android:drawableLeft="@drawable/ic_info"
+        android:gravity="center"
+        android:padding="7dp"
+        android:text="Info"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/reviews"
+        app:layout_constraintTop_toBottomOf="@id/min" />
+
+    <TextView
+        android:id="@+id/most"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:text="Most Popular Items"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:text="MOST POPULAR"
+        android:textColor="@color/green"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu" />
+
+    <ImageView
+        android:id="@+id/food"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:src="@drawable/foodicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/most" />
+
+    <TextView
+        android:id="@+id/plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hawawshi"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/food"
+        app:layout_constraintTop_toBottomOf="@id/most" />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Minced meat, mix vegetables, mushrooms and chesse,"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/food"
+        app:layout_constraintTop_toBottomOf="@id/plate" />
+
+    <ImageView
+        android:id="@+id/image_cart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/cart"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/des"
+        app:layout_constraintTop_toTopOf="@id/des" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EGP 29:00"
+        android:textColor="@color/red"
+        android:textSize="23dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/food"
+        app:layout_constraintTop_toBottomOf="@id/des" />
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/price"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
